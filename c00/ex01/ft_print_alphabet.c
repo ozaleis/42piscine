@@ -12,16 +12,19 @@
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void);
-
-void	ft_print_alphabet(void)
+void putchar(char m)
 {
-	char	al;
+    write(1, &m, 1);
+}
 
-	al = 'a';
-	while (al <= 'z')
-	{
-		write (1, &al, 1);
-		al++;
-	}
+void ft_print_alphabet(void)
+	
+{
+    char xihaja;
+    xihaja = 'a';
+    while(xihaja <= 'z')
+    {
+        ft_putchar(xihaja)
+        xihaja++;
+    }
 }
